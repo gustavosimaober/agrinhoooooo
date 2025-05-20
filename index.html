@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Árvore!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Quem consegue crescer a árvore mais rápido?</h1>
+
+    <div class="info-box">
+        <p>Dias de crescimento: <span id="days">0</span></p>
+    </div>
+
+    <div id="tree-container">
+        <img id="tree" src="images/semente.png" alt="Semente">
+    </div>
+
+    <!-- Textos educativos e celebratórios sobre agro e cidade -->
+    <div class="info-box">
+        <p id="growth-message">🌱 A semente representa o início da produção agrícola. O campo planta, e a cidade se alimenta!</p>
+        <p id="celebration-message">A conexão entre campo e cidade fortalece nossa sociedade, garantindo alimento, empregos e inovação!</p>
+    </div>
+
+    <!-- Botões de ação -->
+    <div id="button-container">
+        <button onclick="waterTree()">Regar 🌱</button>
+        <button onclick="giveSun()">Dar luz ☀️</button>
+    </div>
+
+    <!-- Ranking dos jogadores -->
+    <div class="ranking">
+        <h2>Ranking dos jogadores</h2>
+        <ul id="ranking-list"></ul>
+    </div>
+
+    <!-- Botão de reiniciar -->
+    <button id="reset-btn" onclick="resetGame()">🔄 Reiniciar Jogo</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

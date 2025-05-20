@@ -1,0 +1,83 @@
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: #4CAF50; /* Fundo sólido */
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 80px; /* Define um tamanho fixo */
+    overflow: hidden; /* Impede que o texto altere a altura da caixa */
+}
+
+#tree-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#tree {
+    width: 150px;
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre botões */
+    margin-top: 10px; /* Garante que os botões fiquem alinhados */
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FF9800;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #F57C00;
+    transform: scale(1.05);
+}
+
+#reset-btn {
+    font-size: 30px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: #ff3d00;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
